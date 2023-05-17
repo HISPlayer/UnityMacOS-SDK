@@ -16,12 +16,6 @@ It is necessary to set the **Color Space** as **Linear**.
 
 To set it up go to **Project Settings > Player Settings > Other Settings**
 
-Also, make sure that the **HISPlayerMacOSX.framework** file, located in **Packages > HISPlayer MacOSX SDK > HISPlayer > Plugins > MacOSX**, has the **Add to Embedded Binaries** set to true.
-
-<p align="center">
-<img src="./assets/embedded-bin.png" width=50%>
-</p>
-
 ## Set up HISPlayer Manager
 Create a script (for example **MacOSStreamController**) which is going to inherit from **HISPlayerManager**. It is needed to include the namespace by adding **‘using HISPlayerAPI;’** and add this component to a GameObject. It is recommended to create an **Empty GameObject** for this.
 
@@ -86,12 +80,6 @@ For creating this object, select **GameObject > 3D Object > Quad**. Then select 
 Once all this process it’s done, associate the **RenderTexture** to the script component.
 
 ## Configure HISPlayer Properties
-### <ins>License Key</ins>
-Input the license key that is associated with the SDK. If the license key is not valid, the player won't work and will throw an error message.
-
-<p align="center">
-<img src="./assets/license-key.png">
-</p>
 
 ### <ins>Multi Stream Properties</ins>
 Use **Multi Stream Properties** to set all configurations needed for multi stream.However, currently HISPlayer MacOS SDK only supports single stream. Multi stream support will be added in the future. It starts with 0 elements. Adding more elements will be ignored until multi stream support is added. Each element added has its own configuration.
