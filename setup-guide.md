@@ -94,5 +94,5 @@ Use **Multi Stream Properties** to set all configurations needed for multi strea
 ## Build and Run:
 Once the configuration it’s done, open **‘Build Settings’** and press **‘Build And Run’**.
 <p align="center">
-<img src="./assets/build-run.png" width=45%>
+<img src="./assets/build-and-run.png" width=45%>
 </p>
