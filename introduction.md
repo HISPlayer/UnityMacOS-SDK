@@ -21,6 +21,10 @@
 * 3GP
 * MPG
 
+### Subtitles
+* CEA-608
+* WebVTT
+
 ### Supported Unity Versions
 * 2020
 * 2021
