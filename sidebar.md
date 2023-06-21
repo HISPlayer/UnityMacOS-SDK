@@ -1,4 +1,5 @@
 - [HISPlayer Unity MacOS SDK](/introduction.md)
 - [Quickstart Guide](/setup-guide.md)
+- [Unity HDRP](/unity-hdrp.md)
 - [HISPlayer API](/hisplayer-api.md)
 - [Releases](/releases.md)
