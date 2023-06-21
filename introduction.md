@@ -40,3 +40,7 @@
 
 ### Supported Graphics API:
 * Metal
+
+### Supported Unity Render Pipeline
+* URP (Universal Render Pipeline)
+* HDRP (High Definition Render Pipeline)
