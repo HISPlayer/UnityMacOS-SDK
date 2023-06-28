@@ -164,8 +164,6 @@ Change the video’s url  of a certain player. The next playback will start paus
 Change the video’s url  of a certain player. The next playback will start paused. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list. The url parameter is the content to be played back.
 #### protected void AddStream(StreamProperties newStream)
 Add a new stream to the list **multiStreamProperties**. The stream must be added using this function instead of changing the list manually.
-#### protected string GetPlayerDebugLog(int playerIndex)
-Provides a log message obtained from a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 #### protected long GetVideoPosition(int playerIndex)
 Provides information about the timeline position in milliseconds, of the current video of a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 #### protected long GetVideoDuration(int playerIndex)
