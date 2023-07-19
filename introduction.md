@@ -2,10 +2,19 @@
 
 ## Compatibility
 
-### Supported Stream Protocols: 
+### Video Delivery Formats: 
 * HLS
 
-### Supported Audio/Video Formats
+### Video Codecs
+  * H.264 (AVC)
+  * H.265 (HEVC)
+
+### Audio Codecs
+  * AAC
+  * MP3
+  * ALAC
+
+### Supported Local Formats
 * WMV
 * RM
 * MP3
