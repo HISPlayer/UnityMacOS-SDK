@@ -192,3 +192,9 @@ Obtain the number of captions of a  certain stream. The playerIndex is associate
 Obtain the ID of a certain caption of a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 #### public string GetCaptionLanguage(int playerIndex, int ccTrackIndex)
 Obtain the language of a certain caption of a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+
+#### public void SetPlaybackSpeedRate(int playerIndex, float speed)
+Modify the **speed rate** of a certain stream giving a playerIndex. The value of the player's speed must be greater (>) than 0.0f and less than or equal (<=) to 8.0f. The default value of player's speed is 1.0f. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+
+#### public float GetPlaybackSpeedRate(int playerIndex)
+Obtain the **speed rate** of a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
