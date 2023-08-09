@@ -1,7 +1,25 @@
-# Setup Guide
-Through this guide, you will be introduced to the basic steps for setting up the playback.
+# QuickStart Guide
+Getting started with HISPlayer consists of implementing the following steps:
 
-## Import Package
+1. Import and configure package   
+
+      1.1. Import package
+ 
+      1.2. Configure Unity for MacOS
+   
+2. Create your own sample
+   
+    2.1 Setup HISPlayer Manager
+   
+    2.2 Attach Unity Resources
+   
+    2.3 Configure HISPlayer Properties
+
+    2.4 Build and Run
+
+It's also possible to import the [HISPlayer Sample](/import-sample.md) after completing step 1. The sample is a comprehensive example scene using the HISPlayerSDK to help demonstrate features like play, pause, seek, etc.
+
+## 1.1 Import Package
 Importing the package is the same as importing other normal packages in Unity. Select the package of HISPlayer SDK and import it.
 
 **Assets > Import Package > Custom Package**
@@ -10,12 +28,12 @@ Importing the package is the same as importing other normal packages in Unity. S
 <img width="450" src="https://github.com/HISPlayer/UnityMacOS-SDK/assets/47497948/9828a86c-37a8-4b9a-b9c4-ae80a84aa942">
 </p>
 
-## Configure Unity for MacOS
+## 1.2 Configure Unity for MacOS
 It is necessary to set the **Color Space** as **Linear**.
 
 To set it up go to **Project Settings > Player Settings > Other Settings**
 
-## Set up HISPlayer Manager
+## 2.1 Set up HISPlayer Manager
 Create a script (for example **MacOSStreamController**) which is going to inherit from **HISPlayerManager**. It is needed to include the namespace by adding **‘using HISPlayerAPI;’** and add this component to a GameObject. It is recommended to create an **Empty GameObject** for this.
 
 Call the **‘SetUpPlayer()’** function in order to initialize the stream environment internally. This function can be called whenever it’s needed.
@@ -38,7 +56,7 @@ public class MacOSStreamController : HISPlayerManager
 ```
 It is strictly necessary to use **SetUpPlayer** before using anything else, because this function will initialize everything from the SDK in order to be able to use the rest of the functions (Play, Pause, Seek …).
 
-## Attach Unity Resources
+## 2.2 Attach Unity Resources
 Move to **Unity Editor** to attach all the resources. The rendering system is supporting **Material, RawImage, RenderTexture** and **NONE**  Unity’s components.
 
 ### <ins>Material</ins>
@@ -78,7 +96,7 @@ For creating this object, select **GameObject > 3D Object > Quad**. Then select 
 
 Once all this process it’s done, associate the **RenderTexture** to the script component.
 
-## Configure HISPlayer Properties
+## 2.3 Configure HISPlayer Properties
 
 ### <ins>Multi Stream Properties</ins>
 Use **Multi Stream Properties** to set all configurations needed for multi stream.However, currently HISPlayer MacOS SDK only supports single stream. Multi stream support will be added in the future. It starts with 0 elements. Adding more elements will be ignored until multi stream support is added. Each element added has its own configuration.
@@ -90,7 +108,7 @@ Use **Multi Stream Properties** to set all configurations needed for multi strea
 * **URL**: Add the **URL** associated to the stream. Each stream can have multiple URLs, therefore users can use the same render surface to play different URLs.
 * **Auto Play**: Property to determine whether the player will start automatically after set up. The property only works for the beginning of the stream, it is not used to toggle play/pause.
 
-## Build and Run:
+## 2.4 Build and Run:
 Once the configuration it’s done, open **‘Build Settings’** and press **‘Build And Run’**.
 <p align="center">
 <img src="./assets/build-and-run.png" width=45%>
