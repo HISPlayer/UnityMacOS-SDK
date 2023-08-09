@@ -7,9 +7,8 @@ Importing the package is the same as importing other normal packages in Unity. S
 **Assets > Import Package > Custom Package**
 
 <p align="center">
-<img src="./assets/import-package.png">
+<img width="450" src="https://github.com/HISPlayer/UnityMacOS-SDK/assets/47497948/9828a86c-37a8-4b9a-b9c4-ae80a84aa942">
 </p>
-
 
 ## Configure Unity for MacOS
 It is necessary to set the **Color Space** as **Linear**.
@@ -46,7 +45,7 @@ Move to **Unity Editor** to attach all the resources. The rendering system is su
 Move into Assets’ folder for creating a new **Material**. It is possible to create a new **Material** into **Assets > Create > Material**.
 
 <p align="center">
-<img src="./assets/material.png">
+<img width="450" src="https://github.com/HISPlayer/UnityMacOS-SDK/assets/47497948/2cd22826-c9a5-4991-a3ba-0672b3f72a62">
 </p>
 
 Attach the material to the GameObject which is going to be used as a screen.
@@ -61,7 +60,7 @@ This action will be related to Unity’s Canvas. If there is not a Canvas create
 For the creation, select **GameObject > UI > Raw Image**
 
 <p align="center">
-<img src="./assets/rawimage.png">
+<img width="450" src="https://github.com/HISPlayer/UnityMacOS-SDK/assets/47497948/ee108f5b-5b01-4a48-b351-e0da8cfb4f64">
 </p>
 
 Once it is created, it can be attached to the stream controller script without doing anything else.
