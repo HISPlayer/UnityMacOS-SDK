@@ -22,7 +22,7 @@ Importing the package is the same as importing other normal packages in Unity. S
 - Open **File** > **Build Settings** > **Add Open Scenes**
 
 <p align="center">
-<img src="./assets/macossample-buildsetting.png" width=80%>
+<img src="./assets/macossample-buildsettings.png" width=80%>
 </p>
 
 - Build and Run
