@@ -30,3 +30,11 @@ Select the package of HISPlayer SDK and import it.
 
 ## Configure Unity for MacOS
 Switch the platform for **MacOS**. Open **File > Build Settings** and then select **Windows, Mac, Linux platform** and **switch platform**.
+
+## Update License Key
+Input the license key that is associated with the SDK through HISPlayer properties. If the license key is not valid, the player won't work and will throw an error message.
+
+<p align="center">
+<img width="400" src="./assets/license-key.PNG">
+</p>
+
