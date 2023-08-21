@@ -19,6 +19,12 @@ Importing the package is the same as importing other normal packages in Unity. S
 
 - Import TextMesh Pro Essential
 
+- Input the license key through the Inspector Window. **StreamController** game object -> **HISPlayerSample** component -> **License Key**
+
+<p align="center">
+<img src="./assets/license-key.PNG">
+</p>
+
 - Open **File** > **Build Settings** > **Add Open Scenes**
 
 <p align="center">
