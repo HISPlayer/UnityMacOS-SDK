@@ -4,7 +4,7 @@
 
 The following public APIs are provided by **HISPlayerManager**
 
-* **public List < StreamProperties > multiStreamProperties**: List of properties for multi stream. However, currently HISPlayer MacOS SDK only supports single stream. Multi stream support will be added in the future. It starts with 0 elements. Adding more elements will be ignored until multi stream support is added.
+* **public List < StreamProperties > multiStreamProperties**: List of properties for multi stream. It starts with 0 elements. Adding more elements will be ignored until multi stream support is added.
 * **public class StreamProperties**:
   * **public HISPlayerRenderMode renderMode**: Type of texture for rendering.
   * **public Material material**: Reference to the Unity Material.
