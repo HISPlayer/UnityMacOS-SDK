@@ -5,4 +5,5 @@
 - [Unity HDRP](/unity-hdrp.md)
 - [HISPlayer API](/hisplayer-api.md)
 - [Update the SDK](/update-the-sdk.md)
+- [Obtaining Logs](/obtaining-logs.md)
 - [Releases](/releases.md)
