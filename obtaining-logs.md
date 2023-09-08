@@ -7,7 +7,7 @@ The logs are going to be display into the **Console Unity Window**. Unity resets
 The Console window can be open by **Window** > **General** > **Console**.
 
 <p align="center">
-<img width=20% alt="image" src="https://github.com/HISPlayer/UnityMacOS-SDK/assets/47497948/a0df4be1-b336-4aec-8083-9553c48aec96">
+<img width=25% alt="image" src="https://github.com/HISPlayer/UnityMacOS-SDK/assets/47497948/a0df4be1-b336-4aec-8083-9553c48aec96">
 </p>
 
 <p align="center">
