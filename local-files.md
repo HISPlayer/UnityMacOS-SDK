@@ -1,6 +1,6 @@
 # Playing Local Files
 
-HISPlayer MacOS for Unity can playback local content from [**Unity Streaming Assets**](./local-files.md#Unity-Streaming-Assets).
+HISPlayer MacOS for Unity can play local content from [**Unity Streaming Assets**](./local-files.md#Unity-Streaming-Assets).
 
 <br>
 
