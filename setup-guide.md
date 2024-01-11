@@ -106,14 +106,20 @@ Input the license key that is associated with the SDK. If the license key is not
 </p>
 
 ### <ins>Multi Stream Properties</ins>
-Use **Multi Stream Properties** to set all configurations needed for multi stream.However, currently HISPlayer MacOS SDK only supports single stream. Multi stream support will be added in the future. It starts with 0 elements. Adding more elements will be ignored until multi stream support is added. Each element added has its own configuration.
-* **Render Mode**:
-  * Material: Attach the **Material** asset created to the **Material** section of the element.
-  * Raw Image: Attach the **RawImage** asset created to the **RawImage** section of the element.
-  * RenderTexture: Attach the **RenderTexture** asset created before to the **RenderTexture** section of the element.
-  * NONE: If the stream is not going to be rendered on any surface, select this option.
-* **URL**: Add the **URL** associated to the stream. Each stream can have multiple URLs, therefore users can use the same render surface to play different URLs.
-* **Auto Play**: Property to determine whether the player will start automatically after set up. The property only works for the beginning of the stream, it is not used to toggle play/pause.
+Use Multi Stream Properties to set all the configuration needed for multi stream (not supported on Windows Editor). It starts with 0 elements. Each element added has its own configuration for multiple players and corresponds to 1 Render Surface. If you just need a single stream, then you just need to add 1 element with 1 URL.
+
+* <span style="color:blue">**Render Mode**</span>: Select the render surface. It can be RenderTexture, Material, RawImage or NONE.
+* <span style="color:blue">**Material**</span>: Attach the **Material** asset created to the **Material** section of the element.
+* <span style="color:blue">**Raw Image**</span>: Attach the **RawImage** asset created to the **RawImage** section of the element.
+* <span style="color:blue">**Render Texture**</span>: Attach the **RenderTexture** to the **RenderTexture** section of the element.
+* <span style="color:blue">**URL**</span>: Add the URL associated to the stream. Each stream can have multiple URLs, therefore users can use the same render surface to play different URLs. It is also possible to add local files allocated in the device’s storage and the StreamingAssets special folder of Unity (see [Playing Local Files](/local-files.md) for more details).
+* <span style="color:blue">**Autoplay**</span>: Property to determine whether the player will start automatically after set up.
+* <span style="color:blue">**LoopPlayback (Read-only)**</span>: Loop the current playback. It's true by default. To modify this value, please, use the Editor or the constructor **StreamProperties(loopPlayback, autoTransition)**.
+* <span style="color:blue">**AutoTransition (Read-only)**</span>: Change the playback to the next video in the playlist. This action won't have effect when loopPlayback is true. It's false by default. To modify this value, please, use the Editor or the constructor **StreamProperties(loopPlayback, autoTransition)**.
+
+<p align="center">
+<img width="479" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/7d94655c-2d91-4a1b-b90e-36ab1dbfa1da">
+</p>
 
 ## 2.4 Build and Run:
 Once the configuration it’s done, open **‘Build Settings’** and press **‘Build And Run’**.
