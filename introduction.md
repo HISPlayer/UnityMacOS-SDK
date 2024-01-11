@@ -38,6 +38,7 @@
 * 2020
 * 2021
 * 2022
+* 2023
 
 ### Supported MacOS Version
 * MacOS 10.7+
