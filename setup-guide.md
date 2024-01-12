@@ -22,7 +22,7 @@ It's also possible to import the [HISPlayer Sample](https://hisplayer.github.io/
 ## 1.1 Import Package
 Importing the package is the same as importing other normal packages in Unity. Select the package of HISPlayer SDK and import it.
 
-**Assets > Import Package > Custom Package**
+**Assets > Import Package > Custom Package > HISPlayerSDK unity package**
 
 <p align="center">
 <img width="450" src="https://github.com/HISPlayer/UnityMacOS-SDK/assets/47497948/9828a86c-37a8-4b9a-b9c4-ae80a84aa942">
@@ -92,7 +92,7 @@ Once all this process it’s done, associate the **RenderTexture** to the script
 ## 2.3 Configure HISPlayer Properties
 
 ### <ins>License Key</ins>
-Input the license key that is associated with the SDK. If the license key is not valid, the player won't work and will throw an error message. License key is not required for Unity Editor.
+Input the license key that is associated with the SDK. If the license key is not valid, the player won't work and will throw an error message. License key is not required for Unity Editor usage.
 
 <p align="center">
 <img width="400" src="./assets/license-key.PNG">
