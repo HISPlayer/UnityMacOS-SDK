@@ -92,7 +92,7 @@ Once all this process it’s done, associate the **RenderTexture** to the script
 ## 2.3 Configure HISPlayer Properties
 
 ### <ins>License Key</ins>
-Input the license key that is associated with the SDK. If the license key is not valid, the player won't work and will throw an error message.
+Input the license key that is associated with the SDK. If the license key is not valid, the player won't work and will throw an error message. License key is not required for Unity Editor.
 
 <p align="center">
 <img width="400" src="./assets/license-key.PNG">
