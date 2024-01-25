@@ -4,7 +4,7 @@
 ##### January 25, 2024
 - [**Added**] New API to change video content using the URL string as a paremeter:
     - **ChangeVideoContent(int playerIndex, string url)**
-- [**Improvement**] Optimized Unity logs improvement
+- [**Improvement**] Optimized error logs
 
 ### Version 3.2.0
 ##### December 7, 2023
