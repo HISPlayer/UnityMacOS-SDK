@@ -19,6 +19,8 @@
 ##### September 5, 2023
 The macOS SDK is moved to multiplatform HISPlayerSDK (Android, iOS, macOS, WebGL, Windows)
 
+Starting from version 3.0.0, the macOS SDK is part of multiplatform SDK
+
 ### Version 1.2.0
 ##### August 21, 2023
 - [**Added**] License key input field.
