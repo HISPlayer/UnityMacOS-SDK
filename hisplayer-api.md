@@ -231,10 +231,13 @@ Add a new stream to the list multiStreamProperties. The stream must be added usi
 Add new content to a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. Please, make sure the string is correct. This function supports local file paths allocated in the **StreamingAssets** Unity folder.
 
 #### protected void ChangeVideoContent(int playerIndex, int urlIndex)
-Change the video’s url  of a certain player. The next playback will start paused. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **urlIndex** is associated with the index of the element in the list of urls.
+Change the video’s URL  of a certain player. The next playback will start paused. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **urlIndex** is associated with the index of the element in the list of URLs.
+
+#### protected void ChangeVideoContent(int playerIndex, string url)
+Change the video’s URL of a certain player given a new URL. The next playback will start paused. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The parameter **url** is the link to the new video. Please, make sure the new URL is correctly written.
 
 #### protected void RemoveVideoContent(int playerIndex, int urlIndex)
-Remove content from a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **urlIndex*** is associated with the index of the element in the list of urls.
+Remove content from a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **urlIndex*** is associated with the index of the element in the list of URLs.
 
 #### protected void SetPlaybackSpeedRate(int playerIndex, float speed)
 Modify the **speed rate** of a certain stream giving a **playerIndex**. The value of the player's speed must be greater (>) than 0.0f and less than or equal (<=) to 8.0f. The default value of player's speed is 1.0f. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
