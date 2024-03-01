@@ -49,7 +49,8 @@ The UI components in the sample scene are fully modifiable and each stream has i
 </p>
 
 ## MultiStream Streams and URLs
-In order to add/remove streams and URLs, please refer to the component **HISPlayerMultiStreamController** attached to the **HISPlayerMultiStreamController GameObject** in the **Inspector**. 
+In order to add/remove streams and URLs, please refer to the component **HISPlayerMultiStreamController** attached to the
+**HISPlayerMultiStreamController GameObject** in the **Inspector**. 
 
 ### Add/Remove Streams
 
@@ -62,7 +63,8 @@ You can add/remove streams by pressing the buttons **+/-** in the **Multi Stream
 
 ### Add/Remove URLs
 
-You can add/remove URLs by selecting one element from the **Multi Stream Properties list** and then pressing the buttons **+/-** in the **Url list**. For changing the content of the videos, please refer to **[ChangeVideoContent](https://hisplayer.github.io/UnityMacOS-SDK/#/hisplayer-api)** API.
+You can add/remove URLs by selecting one element from the **Multi Stream Properties list** and then pressing the buttons **+/-** in the **Url list**.
+For changing the content of the videos, please refer to **[ChangeVideoContent](https://hisplayer.github.io/UnityMacOS-SDK/#/hisplayer-api)** API.
 
 <p align="center">
   <img width=50% alt="urls" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/bf03d4a3-d1a5-4e4d-b572-10bbe18c1f86">
