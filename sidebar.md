@@ -1,7 +1,6 @@
 - [HISPlayer Unity MacOS SDK](/introduction.md)
 - [Quickstart Guide](/setup-guide.md)
 - [Import HISPlayer Sample](/import-sample.md)
-- [Import HISPlayer MultiStream Sample](/import-multi-stream-sample.md)
 - [Playing Local Files](/local-files.md)
 - [Unity URP](/unity-urp.md)
 - [Unity HDRP](/unity-hdrp.md)
