@@ -11,7 +11,7 @@ Importing the package is the same as importing other normal packages in Unity. S
   <img width=50% src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/9cddf00f-9abc-4075-9bc2-ba278b92a7f9">
 </p>
 
-- Complete the configuration for MacOS ->  [**Configure Unity for MacOS**](./setup-guide.md#12-configure-unity-for-macos)
+- Complete the configuration for MacOS ->  [**Configure Unity for macOS**](./setup-guide.md#12-configure-unity-for-macos)
 
 - Open the scene **Assets/HISPlayerSample/Scenes/HISPlayerSample.unity**
 
