@@ -45,7 +45,6 @@ The following public APIs are provided by **HISPlayerManager**
     * **HISPLAYER_EVENT_TEXT_RENDER**
     * **HISPLAYER_EVENT_AUTO_TRANSITION**
     * **HISPLAYER_EVENT_PLAYBACK_BUFFERING**
-    * **HISPLAYER_EVENT_NETWORK_CONNECTED**
     * **HISPLAYER_EVENT_END_OF_CONTENT**
       
 * **public enum HISPlayerError**: The list of errors provided by HISPlayer SDK. The errors can be used with the virtual functions in the next section:
@@ -56,7 +55,8 @@ The following public APIs are provided by **HISPlayerManager**
    * **HISPLAYER_ERROR_IMPRESSIONS_LIMIT_REACHED** (no function on this)
    * **HISPLAYER_ERROR_PLAYBACK_DURATION_LIMIT_REACHED** (no function on this)
    * **HISPLAYER_ERROR_PLATFORM_NOT_REGISTERED** (no function on this)
-
+   * **HISPLAYER_ERROR_NETWORK_FAILED**
+     
 * **public struct HISPlayerEventInfo**: The information of the triggered event.
    * **public HISPlayerEvent eventType**: The type of the event triggered.
    * **public int playerIndex**: The index of the player where the event is triggered.
@@ -198,6 +198,21 @@ This event occurs whenever an internal playlist reaches the end of the list.
 
 #### protected virtual void ErrorInfo(HISPlayerErrorInfo subtitlesInfo)
 Override this method to add custom logic when an error callback is triggered. Please, refer to the **HISPlayerError** list.
+
+#### protected virtual void ErrorNetworkFailed(HISPlayerErrorInfo errorInfo)
+Override this method to add custom logic when **HISPlayerError.HISPLAYER_ERROR_NETWORK_FAILED** is triggered.
+This error occurs whenever the network on a stream playback has failed.
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>param1</td>
+    <td>Number of tracks of the playback.</td>
+  </tr>
+</table>
 
 ### Non-virtual functions
 These functions can’t be overridden and they can be used only inside the inherited script. If it’s needed to use some of these functions into the Unity scene, for example with buttons, it is needed to create a public function which connects the button with the API.
