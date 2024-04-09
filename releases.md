@@ -8,6 +8,8 @@
     -  URL_EXTENSION (Default)
     -  HLS
     -  DASH
+-  [**Added**] HISPlayerError.HISPLAYER_ERROR_NETWORK_FAILED and ErrorNetworkFailed(HISPlayerErrorInfo errorInfo) event callback
+    - It indicates if there is no Internet when starting the application     
 - [**Improvement**] Optimized HISPlayer Settings
     - A warning message will be displayed in case a field required by HISPlayer SDK is missing
 
