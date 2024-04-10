@@ -1,7 +1,7 @@
 # HISPlayer Unity MacOS SDK Release Notes
 
 ### Version 3.4.0
-##### April 9, 2024
+##### April 10, 2024
 - [**Added**] Local Playback Persistent Datapath support
 - [**Added**] HISPLAYER_ERROR_PLATFORM_NOT_REGISTERED error event
 - [**Added**] URL_EXTENSION, HLS and DASH MIME Types support. Please, refer to HISPlayerMimeTypes on [HISPlayer API](https://hisplayer.github.io/UnityMacOS-SDK/#/hisplayer-api)
