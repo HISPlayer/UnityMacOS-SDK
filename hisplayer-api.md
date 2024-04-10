@@ -203,17 +203,6 @@ Override this method to add custom logic when an error callback is triggered. Pl
 Override this method to add custom logic when **HISPlayerError.HISPLAYER_ERROR_NETWORK_FAILED** is triggered.
 This error occurs whenever the network on a stream playback has failed.
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>param1</td>
-    <td>Number of tracks of the playback.</td>
-  </tr>
-</table>
-
 ### Non-virtual functions
 These functions can’t be overridden and they can be used only inside the inherited script. If it’s needed to use some of these functions into the Unity scene, for example with buttons, it is needed to create a public function which connects the button with the API.
 
