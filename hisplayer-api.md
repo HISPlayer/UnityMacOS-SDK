@@ -14,6 +14,7 @@ The following public APIs are provided by **HISPlayerManager**
     * **public RawImage rawImage**: Reference to the Unity Raw Image.
     * **public RenderTexture renderTexture**: Reference to the Unity Render Texture.
     * **public List \<string\> url**: List of the URLs for the stream.
+    * **public list \<string\> urlMimeTypes**: List of the HISPlayerMimeTypes attached to each URL from the url list.
     * **public bool autoPlay**: If true, the players will start playing automatically after set-up.
     * **public bool EnableRendering**: Determines if the stream will be rendered or not. The value can change in every moment for toggling between render or non-render mode. If true, the player will be rendered. It only can change in runtime.
     * **public bool LoopPlayback (Read-only)**: Loop the current playback. It's true by default. To modify this value, please, use the Editor or the constructor **StreamProperties(loopPlayback, autoTransition)**.
@@ -24,6 +25,10 @@ The following public APIs are provided by **HISPlayerManager**
     * **Material**
     * **RawImage**
     * **NONE**
+
+* * **public enum HISPlayerMimeTypes**: The list of the supported MIME Types:
+   * **URL_EXTENSION**
+   * **HLS**
   
 * **public enum HISPlayerEvent**: The list of events provided by HISPlayer SDK. The events can be used with the virtual functions in the next section:
     * **HISPLAYER_EVENT_PLAYBACK_READY**
@@ -40,7 +45,6 @@ The following public APIs are provided by **HISPlayerManager**
     * **HISPLAYER_EVENT_TEXT_RENDER**
     * **HISPLAYER_EVENT_AUTO_TRANSITION**
     * **HISPLAYER_EVENT_PLAYBACK_BUFFERING**
-    * **HISPLAYER_EVENT_NETWORK_CONNECTED**
     * **HISPLAYER_EVENT_END_OF_CONTENT**
       
 * **public enum HISPlayerError**: The list of errors provided by HISPlayer SDK. The errors can be used with the virtual functions in the next section:
@@ -50,8 +54,9 @@ The following public APIs are provided by **HISPlayerManager**
    * **HISPLAYER_ERROR_LICENSE_DISABLED** (no function on this)
    * **HISPLAYER_ERROR_IMPRESSIONS_LIMIT_REACHED** (no function on this)
    * **HISPLAYER_ERROR_PLAYBACK_DURATION_LIMIT_REACHED** (no function on this)
+   * **HISPLAYER_ERROR_PLATFORM_NOT_REGISTERED** (no function on this)
    * **HISPLAYER_ERROR_NETWORK_FAILED**
-
+     
 * **public struct HISPlayerEventInfo**: The information of the triggered event.
    * **public HISPlayerEvent eventType**: The type of the event triggered.
    * **public int playerIndex**: The index of the player where the event is triggered.
@@ -194,6 +199,10 @@ This event occurs whenever an internal playlist reaches the end of the list.
 #### protected virtual void ErrorInfo(HISPlayerErrorInfo subtitlesInfo)
 Override this method to add custom logic when an error callback is triggered. Please, refer to the **HISPlayerError** list.
 
+#### protected virtual void ErrorNetworkFailed(HISPlayerErrorInfo errorInfo)
+Override this method to add custom logic when **HISPlayerError.HISPLAYER_ERROR_NETWORK_FAILED** is triggered.
+This error occurs when the Internet connection fails.
+
 ### Non-virtual functions
 These functions can’t be overridden and they can be used only inside the inherited script. If it’s needed to use some of these functions into the Unity scene, for example with buttons, it is needed to create a public function which connects the button with the API.
 
@@ -221,14 +230,17 @@ Modify the volume of a certain stream giving a **playerIndex**. The **volume** o
 #### protected void AddStream(StreamProperties newStream)
 Add a new stream to the list multiStreamProperties. The stream must be added using this function instead of changing the list manually.
 
-#### protected void AddVideoContent(int playerIndex, string url)
-Add new content to a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. Please, make sure the string is correct. This function supports local file paths allocated in the **StreamingAssets** Unity folder.
+#### protected void AddVideoContent(int playerIndex, string url, HISPlayerMimeTypes mimeType = HISPlayerMimeTypes.URL_EXTENSION (optional))
+Add new content to a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. Please, make sure the string is correct. This function supports local file paths allocated in the **StreamingAssets** Unity folder. The **mimeType** parameter is optional and indicates which MIME type will be used for the new url.
 
 #### protected void ChangeVideoContent(int playerIndex, int urlIndex)
 Change the video’s URL  of a certain player. The next playback will start paused if **autoPlay** is disabled. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **urlIndex** is associated with the index of the element in the list of URLs.
 
 #### protected void ChangeVideoContent(int playerIndex, string url)
 Change the video’s URL of a certain player given a new URL. The next playback will start paused if **autoPlay** is disabled. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The parameter **url** is the link to the new video. Please, make sure the new URL is correctly written.
+
+#### protected void ChangeVideoContent(int playerIndex, string url, HISPlayerMimeTypes mimeType)
+Change the video’s URL of a certain player given a new URL. The next playback will start paused if **autoPlay** is disabled. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The parameter **url** is the link to the new video. Please, make sure the new URL is correctly written. This function supports local file paths. This function will replace the Playlist with the new URL. The **mimeType** indicates which MIME type will be used for the new url.
 
 #### protected void RemoveVideoContent(int playerIndex, int urlIndex)
 Remove content from a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **urlIndex*** is associated with the index of the element in the list of URLs.

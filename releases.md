@@ -1,5 +1,18 @@
 # HISPlayer Unity MacOS SDK Release Notes
 
+### Version 3.4.0
+##### April 10, 2024
+- [**Added**] Local Playback Persistent Datapath support
+- [**Added**] HISPLAYER_ERROR_PLATFORM_NOT_REGISTERED error event
+- [**Added**] URL_EXTENSION, HLS and DASH MIME Types support. Please, refer to HISPlayerMimeTypes on [HISPlayer API](https://hisplayer.github.io/UnityMacOS-SDK/#/hisplayer-api)
+    -  URL_EXTENSION (Default)
+    -  HLS
+    -  DASH
+-  [**Added**] HISPlayerError.HISPLAYER_ERROR_NETWORK_FAILED and ErrorNetworkFailed(HISPlayerErrorInfo errorInfo) event callback
+    - It indicates if there is no Internet when starting the application     
+- [**Improvement**] Optimized HISPlayer Settings
+    - A warning message will be displayed in case a field required by HISPlayer SDK is missing
+
 ### Version 3.3.0
 ##### January 25, 2024
 - [**Added**] New API to change video content using the URL string as a parameter:
