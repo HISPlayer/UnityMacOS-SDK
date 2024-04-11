@@ -26,9 +26,9 @@ The following public APIs are provided by **HISPlayerManager**
     * **RawImage**
     * **NONE**
 
-* * **public enum HISPlayerMimeTypes**: The list of the supported MIME Types:
-   * **URL_EXTENSION**
-   * **HLS**
+* **public enum HISPlayerMimeTypes**: The list of the supported MIME Types:
+   * **URL_EXTENSION**: The MIME type will be extracted from the URL extension
+   * **HLS**: The "application/x-mpegURL" MIME type will be used
   
 * **public enum HISPlayerEvent**: The list of events provided by HISPlayer SDK. The events can be used with the virtual functions in the next section:
     * **HISPLAYER_EVENT_PLAYBACK_READY**
