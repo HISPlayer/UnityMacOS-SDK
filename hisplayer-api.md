@@ -258,7 +258,7 @@ Provides information about the timeline position in **milliseconds**, of the cur
 Provides information about the total duration in **milliseconds**, of **the current video** of a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
 #### protected HISPlayerTrack[] GetTracks(int playerIndex)
-Provides information about a track of a certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
+Provides the list of the video tracks of the current video playing on a certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
 #### protected int GetTrackBitrate(int playerIndex, int trackIndex)
 Get the bitrate of a certain track of a certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
