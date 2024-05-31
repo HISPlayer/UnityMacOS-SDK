@@ -5,7 +5,7 @@ The following public APIs are provided by **HISPlayerManager**
 
 * **public string licenseKey**: License key for making the SDK works. License key is not required for Unity Editor usage.
 
-* **public List <StreamProperties> multiStreamProperties**: List of properties for multi stream. Please, don't modify this list directly, use the **AddStream** or **RemoveStream** functions instead.
+* **public List <StreamProperties> multiStreamProperties**: List of properties for multi stream. Please, don't modify this list directly.
   
 * **public class StreamProperties**:
     * **public StreamProperties(bool isLoopPlaybackEnabled = true, bool isAutoTransitionEnabled = false)**: Constructor of the class. The received parameters will set the value of **LoopPlayback** and **AutoTransition** properties respectively. 
@@ -226,9 +226,6 @@ Seek a certain stream to a certain time giving a **playerIndex** and the time of
 
 #### protected void SetVolume(int playerIndex, float volume)
 Modify the volume of a certain stream giving a **playerIndex**. The **volume** of the track value ranges between 0.0f and 1.0f. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
-
-#### protected void AddStream(StreamProperties newStream)
-Add a new stream to the list multiStreamProperties. The stream must be added using this function instead of changing the list manually.
 
 #### protected void AddVideoContent(int playerIndex, string url, HISPlayerMimeTypes mimeType = HISPlayerMimeTypes.URL_EXTENSION (optional))
 Add new content to a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. Please, make sure the string is correct. This function supports local file paths allocated in the **StreamingAssets** Unity folder. The **mimeType** parameter is optional and indicates which MIME type will be used for the new url.
