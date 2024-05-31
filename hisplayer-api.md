@@ -5,7 +5,7 @@ The following public APIs are provided by **HISPlayerManager**
 
 * **public string licenseKey**: License key for making the SDK works. License key is not required for Unity Editor usage.
 
-* **public List <StreamProperties> multiStreamProperties**: List of properties for multi stream. Please, don't modify this list directly.
+* **public List <StreamProperties> multiStreamProperties**: List of properties for multi stream. Please, don't modify this list directly at runtime.
   
 * **public class StreamProperties**:
     * **public StreamProperties(bool isLoopPlaybackEnabled = true, bool isAutoTransitionEnabled = false)**: Constructor of the class. The received parameters will set the value of **LoopPlayback** and **AutoTransition** properties respectively. 
