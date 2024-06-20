@@ -10,10 +10,9 @@ HISPlayer is the most advanced Unity video streaming player for MacOS, supportin
 ##  [NEW!](https://hisplayer.github.io/UnityVideoUpload/#/README)
 > **[HISPlayer Video Upload / Hosting](https://hisplayer.github.io/UnityVideoUpload/#/README)** is a new feature of our **Unity Video Player SDK**. It allows you to upload local video files to our server and transcode them into HLS and DASH streaming URLs directly from our Unity SDK. Need to convert your videos into HLS and DASH streams for broadcast and multi-platform delivery at scale? **[Start your FREE trial here!](https://dashboard.hisplayer.com/signup)**
 >
-> After signing up for your **Video Upload FREE trial**, please refer to the following tutorials:
-> * **[How to upload videos from the Unity Editor with HISPlayer](https://www.youtube.com/watch?v=POzM5U31tzc)**
-> * **[How to upload video from HISPlayer Dashboard](https://www.youtube.com/watch?v=awfN0zz-8zQ)**
-> 
+>  ### Steps to use:
+> 1. Go to **[HISPlayer video platform ](https://dashboard.hisplayer.com/signup)** and create your private account to upload and host your videos there. [Watch the Tutorial](https://www.youtube.com/watch?v=awfN0zz-8zQ)
+> 2. Import **HISPlayer Unity SDK** into Unity Editor and start playing your videos within your Unity games and apps. [Watch the Tutorial](https://www.youtube.com/watch?v=POzM5U31tzc)
 > 
 > We can help you with the full **end-to-end** delivery and playback.
 
