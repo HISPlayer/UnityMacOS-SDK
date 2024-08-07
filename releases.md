@@ -2,8 +2,6 @@
 
 ### Version 4.3.0
 ##### August 7, 2024
-- [**Added**] HISPLAYER_EVENT_PLAYBACK_BUFFERING and EventPlaybackBuffering.
-    - This event occurs whenever an internal playback is buffering
 - [**Added**] New HISPlayer Video Uploader feature. Turn local videos into streaming videos such as HLS or DASH. This videos are going to be stored in our server for you. Please, on the Editor refer to:
     - [HISPlayer Video Upload documentation](https://hisplayer.github.io/UnityVideoUpload/#/)
 - [**Update**] HISPlayer360Shader.shader is now including the field Flip Vertically. Please, refer to:
@@ -15,7 +13,6 @@
 - [**Improvement**] Optimized license checking
 - [**Improvement**] Optimized HISPlayer API function commentaries to be more clear
 - [**Improvement**] Optimized runtime log messages
-- [**Improvement**] Optimized multistream performance
 
 ### Version 3.4.1
 ##### April 23, 2024
