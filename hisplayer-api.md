@@ -198,7 +198,6 @@ This event occurs whenever an internal playlist reaches the end of the list.
 #### protected virtual void EventVideoSizeChange(HISPlayerEventInfo eventInfo)
 Override this method to add custom logic when **HISPlayerEvent.HISPLAYER_EVENT_VIDEO_SIZE_CHANGE** is triggered.
 This event occurs whenever the internal video size of the current track changes.
-This event is triggered by the ABR feature.
 
 <table>
   <tr>
