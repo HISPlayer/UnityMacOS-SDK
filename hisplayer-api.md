@@ -116,9 +116,13 @@ This event occurs whenever the internal video size of the current track changes.
     <td>param1</td>
     <td>Width of the video.</td>
   </tr>
-   <tr>
+  <tr>
     <td>param2</td>
     <td>Heigth of the video.</td>
+  </tr>
+  <tr>
+    <td>param3</td>
+    <td>Rotation of the original video.</td>
   </tr>
 </table>
 
