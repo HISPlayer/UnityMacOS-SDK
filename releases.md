@@ -1,5 +1,11 @@
 # HISPlayer Unity MacOS SDK Release Notes
 
+### Version 4.4.0
+##### September 10, 2024
+- [**Added**] Release API is called automatically when stopping the Editor, changing scenes or closing the app
+- [**Added**] EventVideoSizeChange - eventInfo.param3 is catching the internal rotation value of the original video
+- [**Improvement**] Optimized license key management
+
 ### Version 4.3.0
 ##### August 8, 2024
 - [**Added**] **HISPLAYER_EVENT_VIDEO_SIZE_CHANGE** and **EventVideoSizeChange**.
