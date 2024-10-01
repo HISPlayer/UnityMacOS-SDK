@@ -7,7 +7,7 @@ HISPlayer is the most advanced Unity video streaming player for MacOS, supportin
 
 <br>
 
-## 📣 NEW!: ✨  
+## 📣 NEW! ✨  
 >**Upload and Host your videos with HISPlayer**
 >
 >Need to convert your videos into HLS and DASH streams for multi-platform delivery at scale? HISPlayer includes now the option to upload and host your videos that can be played by HISPlayer SDK. **[Start your FREE trial here!](https://dashboard.hisplayer.com/signup)**
@@ -22,7 +22,7 @@ HISPlayer is the most advanced Unity video streaming player for MacOS, supportin
 
 <br>
 
-## [Try FREE DEMO of our Unity Video Player for MacOS Here!](https://github.com/HISPlayer/Unity_Video_Player/releases/tag/v3.4.1)
+## [Try FREE DEMO of our Unity MacOS Video Player SDK Here!](https://github.com/HISPlayer/Unity_Video_Player/releases/tag/v3.4.1)
 
 <br>
 
