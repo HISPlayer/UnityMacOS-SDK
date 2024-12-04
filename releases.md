@@ -1,5 +1,9 @@
 # HISPlayer Unity MacOS SDK Release Notes
 
+### Version 4.5.0
+##### December 4, 2024
+- [**Added**] AddStream and RemoveStream APIs
+
 ### Version 4.4.0
 ##### September 10, 2024
 - [**Added**] Release API is called automatically when stopping the Editor, changing scenes or closing the app

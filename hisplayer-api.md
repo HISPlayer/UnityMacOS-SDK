@@ -249,6 +249,9 @@ Seek a certain stream to a certain time giving a **playerIndex** and the time of
 #### protected void SetVolume(int playerIndex, float volume)
 Modify the volume of a certain stream giving a **playerIndex**. The **volume** of the track value ranges between 0.0f and 1.0f. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
+#### protected void AddStream(StreamProperties newStream)
+Add a new stream to the list **multiStreamProperties**. The stream must be added using this function instead of changing the list manually.
+
 #### protected void AddVideoContent(int playerIndex, string url, HISPlayerMimeTypes mimeType = HISPlayerMimeTypes.URL_EXTENSION (optional))
 Add new content to a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. Please, make sure the string is correct. This function supports local file paths allocated in the **StreamingAssets** Unity folder. The **mimeType** parameter is optional and indicates which MIME type will be used for the new url.
 
@@ -263,6 +266,9 @@ Change the video’s URL of a certain player given a new URL. The next playback 
 
 #### protected void RemoveVideoContent(int playerIndex, int urlIndex)
 Remove content from a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **urlIndex*** is associated with the index of the element in the list of URLs.
+
+#### protected void RemoveStream(int playerIndex)
+Remove a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
 #### protected void SetPlaybackSpeedRate(int playerIndex, float speed)
 Modify the **speed rate** of a certain stream giving a **playerIndex**. The value of the player's speed must be greater (>) than 0.0f and less than or equal (<=) to 8.0f. The default value of player's speed is 1.0f. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
