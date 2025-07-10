@@ -1,5 +1,9 @@
 # HISPlayer Unity MacOS SDK Release Notes
 
+### Version 4.8.0
+##### July 7, 2025
+- [**Improvement**] Enhancement to InspectorGUI to dynamically show/hide certain options.
+
 ### Version 4.5.0
 ##### December 4, 2024
 - [**Added**] AddStream and RemoveStream APIs
