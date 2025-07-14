@@ -43,7 +43,6 @@ For the complete Documentation for all Platforms, visit **[HISPlayer Unity SDKs]
 * WebVTT
 
 ### Supported Unity Versions
-* 2020
 * 2021
 * 2022
 * 2023
