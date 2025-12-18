@@ -1,5 +1,11 @@
 # HISPlayer Unity MacOS SDK Release Notes
 
+### Version 4.14.0
+##### December 18, 2025
+- [**Improvement**] Improved volume change event handling to ensure HISPLAYER_EVENT_VOLUME_CHANGE is triggered consistently across all platforms.
+- [**Improvement**] Updated GetProgramDateTimeEpoch to return the exact Epoch time of the current frame.
+- [**Improvement**] Improved seek event handling to ensure HISPLAYER_EVENT_PLAYBACK_SEEK_END is consistently triggered across all platforms.
+
 ### Version 4.13.0
 ##### November 28, 2025
 - [**Added**] New playback seek events: HISPLAYER_EVENT_PLAYBACK_SEEK_BEGIN and HISPLAYER_EVENT_PLAYBACK_SEEK_END with their respective overridable functions.
