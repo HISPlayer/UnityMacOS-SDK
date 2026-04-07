@@ -1,5 +1,9 @@
 # HISPlayer Unity MacOS SDK Release Notes
 
+### Version 4.17.0
+##### April 7, 2026
+- [**Improvement**] Updated stereoscopic shader to improve rendering behavior and added support for Side-by-Side and Top-Bottom layouts.
+
 ### Version 4.14.5
 ##### January 15, 2026
 - [**Improvement**] Updated param1 of EventVolumeChange to return the correct volume value.
