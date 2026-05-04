@@ -3,7 +3,6 @@
 ### Version 4.18.0
 ##### May 4, 2026
 - [**Improvement**] Updated EventPlaybackReady stability after loading video.
-- [**Improvement**] Updated EventPlaybackSeek to be triggered correctly after seek finishes.
 
 ### Version 4.17.0
 ##### April 7, 2026
