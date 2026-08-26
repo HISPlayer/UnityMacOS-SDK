@@ -1,5 +1,9 @@
 # HISPlayer Unity MacOS SDK Release Notes
 
+### Version 4.19.0
+##### August 26, 2026
+- [**Added**] Custom HTTP Authorization Headers support.
+
 ### Version 4.18.0
 ##### May 4, 2026
 - [**Improvement**] Updated EventPlaybackReady stability after loading video.
